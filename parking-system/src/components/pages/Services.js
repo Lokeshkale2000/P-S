@@ -14,7 +14,7 @@ const Services = () => {
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await axios.get('https://p-jzjgcig7w-lokeshkale2000s-projects.vercel.app/api/parking/vehicles');
+        const response = await axios.get('https://p-s.vercel.app/api/parking/vehicles');
         setVehicles(response.data);
         setError(''); // Clear any previous error
       } catch (error) {
@@ -37,7 +37,7 @@ const Services = () => {
     const newTicketID = generateTicketID();
 
     try {
-      const response = await axios.post('https://p-jzjgcig7w-lokeshkale2000s-projects.vercel.app/api/parking/park', { 
+      const response = await axios.post('https://p-s.vercel.app/api/parking/park', { 
         vehicleType, 
         ticketId: newTicketID,
         floor
@@ -56,7 +56,7 @@ const Services = () => {
     e.preventDefault();
 
     try {
-      await axios.post('https://p-jzjgcig7w-lokeshkale2000s-projects.vercel.app/api/parking/unpark', { ticketId: ticketID });
+      await axios.post('https://p-s.vercel.app/api/parking/unpark', { ticketId: ticketID });
       // Remove unparked vehicle from list
       setVehicles(vehicles.filter(vehicle => vehicle.ticketId !== ticketID));
       setTicketID(''); // Clear input after successful unpark
