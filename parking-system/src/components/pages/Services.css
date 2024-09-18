@@ -1,0 +1,142 @@
+/* General Container Styles */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Form Section Styles */
+.form-section {
+  width: 30%;
+  padding: 30px;
+  background-color: #d7d5ed;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+}
+.pv{
+  align-content: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #040404;
+  align-content: center;
+}
+
+/* Input and Button Styles */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #0b0579;
+}
+
+/* Dashboard Section Styles */
+.dashboard-section {
+  width: 65%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Floor Box Styles */
+.floor-box {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #d7d5ed;
+}
+
+.floor-box h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #444;
+}
+
+/* Parking List Styles */
+.parking-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* Parking Card Styles */
+.parking-card {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parking-card p {
+  margin: 5px 0;
+  
+}
+
+.parking-card.available {
+  background-color: #d2cde8;
+  border: 1px solid #a5d6a7;
+}
+
+.parking-card.occupied {
+  background-color: #e7ebfb;
+  border: 1px solid #ffab91;
+}
+
+/* Ticket Info Styles */
+.ticket-info {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Error Message Styles */
+.error-message {
+  color: #e53935;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.pt{
+  align-content: center;
+}
+.unpark-vehicle{
+  margin-top: 70px;
+}

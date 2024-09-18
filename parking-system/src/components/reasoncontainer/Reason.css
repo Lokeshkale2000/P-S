@@ -1,0 +1,84 @@
+/* Reason.css */
+.reason-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #464de5; /* Corrected background color */
+}
+
+.reason-item {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically on smaller screens */
+  align-items: center;
+  max-width: 400px;
+  margin: 20px 0;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.reason-icon {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px; /* Space between icon and text */
+}
+
+.reason-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.reason-description {
+  font-size: 16px;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reason-container {
+    flex-direction: column; /* Stack all items vertically */
+    padding: 20px;
+  }
+
+  .reason-item {
+    padding: 20px;
+    max-width: 100%; /* Take full width on smaller screens */
+  }
+
+  .reason-icon {
+    font-size: 36px;
+  }
+
+  .reason-title {
+    font-size: 22px;
+  }
+
+  .reason-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reason-container {
+    padding: 10px;
+  }
+
+  .reason-item {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .reason-icon {
+    font-size: 32px;
+  }
+
+  .reason-title {
+    font-size: 20px;
+  }
+
+  .reason-description {
+    font-size: 14px;
+  }
+}

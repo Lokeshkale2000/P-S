@@ -1,0 +1,57 @@
+/* Contact Component Styles */
+.contact-container {
+  width: 100%;
+  max-width: 400px; /* Reduced max-width for a smaller container */
+  margin: 60px auto; /* Added top and bottom margin */
+  padding: 15px; /* Reduced padding */
+  background-color: #f9f9f9;
+  border-radius: 8px; /* Slightly smaller border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  margin-bottom: 15px; /* Adjusted margin */
+  font-size: 20px; /* Reduced font size */
+  color: #333;
+}
+
+.contact-container label {
+  display: block;
+  margin: 8px 0 4px; /* Adjusted margins */
+  font-weight: 600;
+}
+
+.contact-container input,
+.contact-container textarea,
+.contact-container button {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  margin-top: 4px; /* Adjusted margin */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Slightly smaller border-radius */
+  font-size: 14px; /* Reduced font size */
+}
+
+.contact-container textarea {
+  resize: vertical;
+  min-height: 120px; /* Reduced minimum height */
+}
+
+.contact-container button {
+  background-color: #ff5722; /* Changed button color to orange */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Reduced font size */
+}
+
+.contact-container button:hover {
+  background-color: #e64a19; /* Darker orange on hover */
+}
+
+.status-message {
+  margin-top: 15px; /* Adjusted margin */
+  font-size: 14px; /* Reduced font size */
+  color: #333;
+  text-align: center;
+}
