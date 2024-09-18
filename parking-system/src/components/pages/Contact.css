@@ -3,8 +3,8 @@
   width: 100%;
   max-width: 400px; /* Reduced max-width for a smaller container */
   margin: 60px auto; /* Added top and bottom margin */
-  padding: 15px; /* Reduced padding */
-  background-color: #f9f9f9;
+  padding: 40px; /* Reduced padding */
+  background-color: rgb(237, 233, 233);
   border-radius: 8px; /* Slightly smaller border-radius */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -12,7 +12,7 @@
 .contact-container h2 {
   margin-bottom: 15px; /* Adjusted margin */
   font-size: 20px; /* Reduced font size */
-  color: #333;
+  color: #090909;
 }
 
 .contact-container label {
@@ -52,6 +52,6 @@
 .status-message {
   margin-top: 15px; /* Adjusted margin */
   font-size: 14px; /* Reduced font size */
-  color: #333;
+  color: #640b0b;
   text-align: center;
 }

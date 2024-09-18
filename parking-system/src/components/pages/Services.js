@@ -69,17 +69,18 @@ const Services = () => {
 
   // Render vehicles for a specific floor with a limit of 8 entries
   const renderVehiclesForFloor = (floor) => {
-    const filteredVehicles = vehicles.filter(vehicle => vehicle.floor === floor).slice(0, 8);
+    const filteredVehicles = vehicles.filter(vehicle => vehicle.floor === floor).slice(0, 10);
 
     return (
       <div key={floor} className="floor-box">
+        
         <h3>Floor {floor}</h3>
         {filteredVehicles.length > 0 ? (
           <div className="parking-list">
             {filteredVehicles.map(vehicle => (
               <div key={vehicle.ticketId} className="parking-card">
-                <p><strong>Vehicle Type:</strong> {vehicle.vehicleType}</p>
-                <p><strong>Ticket ID:</strong> {vehicle.ticketId}</p>
+                <p><strong>Vehicle Type:</strong><span className='fieldtitle'> {vehicle.vehicleType}</span></p>
+                <p><strong>Ticket ID:</strong><span className='fieldtitle'> {vehicle.ticketId}</span></p>
               </div>
             ))}
           </div>
